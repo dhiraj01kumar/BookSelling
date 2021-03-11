@@ -1,0 +1,12 @@
+<h2>List of products!!</h2>
+<table border="2px">
+    <thead>
+        <th>Name</th>
+        <th>Price</th>
+    </thead>
+    <tr *ngFor = "let product of productsList">
+        <td>{{product.name}}</td>
+        <td>{{product.newPrice | currency :'INR'}}</td>
+        <td><app-priceupdater [pricevalue]="product.newPrice" (update)="setNewPrice($event,product.id)"></app-priceupdater></td>
+    </tr>
+</table>

@@ -1,0 +1,14 @@
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="nav-item" routerLinkActive="active"><a [routerLink]="['products','AllBooks']"><span class="fa fa-home fa-2.5x" style=" color: whitesmoke;"></span></a></li>
+      <li class="nav-item" routerLinkActive="active"><a [routerLink]="['products','Technical']">Technical</a></li> <!--class="active"-->
+      <li class="nav-item" routerLinkActive="active"><a [routerLink]="['products','Magazines']">Magazines</a></li>
+      <li class="nav-item" routerLinkActive="active"><a [routerLink]="['products','Comic']">Comic</a></li>
+      <li class="nav-item" routerLinkActive="active"><a [routerLink]="['products','Fiction']">Fiction</a></li>
+    </ul>
+    
+  </div>
+</nav>
+<router-outlet></router-outlet>

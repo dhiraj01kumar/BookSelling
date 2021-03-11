@@ -1,0 +1,25 @@
+<div class="section">
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" [routerLink]="['categories/products','AllBooks']">
+            <span><img src="../../assets/images/icon.jpg" height="30px" width="30px" alt="" style="border-radius: 10px;"> GrabIt!</span></a>
+      </div>
+      <ul class="nav navbar-nav">
+        <!-- <li class="active"><a [routerLink]="['/categories']">Products</a></li>
+        <li><a [routerLink]="['/inventory']">Inventory</a></li> -->
+        <li class="nav-item" routerLinkActive="active" style="position: absolute; top: 15px;left: 250px;"><input matInput type="text"  [(ngModel)]="searchword" id="searchbar"(input)="searchthis()" class="form-control glyphicon glyphicon-search" 
+          placeholder="&#xe003;"/></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+         
+        <li style="color: whitesmoke; text-align: center;">Hello there!!!<br> <h5>{{username}} </h5></li>
+        <li class="nav-item" routerLinkActive="active"><a [routerLink]="['/cart']" ><span class="fa fa-shopping-cart fa-2.5x" style=" color: whitesmoke;"> Cart</span></a></li>
+        <!-- <li><a href="#"><span class="glyphicon glyphicon-user" style=" color: whitesmoke;"></span> Sign Up</a></li> -->
+        <li class="nav-item" routerLinkActive="active"><a [routerLink]="['/login']" *ngIf="!isLoggedIn"><span class="glyphicon glyphicon-log-in" style=" color: whitesmoke;"></span> Login</a></li>
+        <li class="nav-item" routerLinkActive="active"><a [routerLink]="['/login']" *ngIf="isLoggedIn" (click)="logOut()"><span class="glyphicon glyphicon-log-out" style=" color: whitesmoke;"></span> Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+

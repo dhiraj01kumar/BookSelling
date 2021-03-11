@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url('assets/images/background2.jpg');
+} 
+@font-face {
+    font-family: 'myFont';
+    src: url('assets/fonts/segoePrint.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'mycurrencyFont';
+    src: url('assets/fonts/currency_reg.ttf') format('truetype');
+}
+
+a{
+    cursor: pointer;
+}

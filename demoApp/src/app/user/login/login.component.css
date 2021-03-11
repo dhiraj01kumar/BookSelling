@@ -1,0 +1,124 @@
+.essentials{
+    position: absolute;
+    top: 150px;
+    left: 130px;
+    width: 250px;
+
+}
+.box{
+    background-image: url('/src/assets/images/background2.jpg');
+    position: relative;
+    top: 50px;
+    height: 400px;
+    width: 500px;
+    left: 400px;
+    -webkit-box-shadow: 0px 0px 23px -7px rgba(0, 0, 0, 0.89);
+        -moz-box-shadow: 0px 0px 23px -7px rgba(0, 0, 0, 0.932);
+        box-shadow: 0px 0px 23px -7px rgba(0, 0, 0, 0.897);
+}
+.box:hover{
+    box-shadow: 0px 0px 23px -7px rgba(248, 246, 246, 0.897);
+}
+
+h1{
+    position: relative;
+    top: 90px;
+    font-size: x-large;
+    text-align: center;
+    color: black;
+    font-family: myFont;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+
+#p1{
+    position: absolute;
+    text-align: center;
+    left: 10px;
+    color: black;
+}
+#p2{
+    top: 35px;
+    text-align: center;
+    position: relative;
+    font-family: myFont;   
+}
+#userName, #password{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 110px;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px double whitesmoke;
+}
+#password:hover{
+    box-shadow: 5px 5px gray;
+}
+#userName:hover{
+    box-shadow: 5px 5px gray;
+}
+::placeholder{
+    font-size: 12px;
+    font-family: myFont;
+    color:rgba(14, 102, 102, 0.603) ;
+}
+input::selection{
+    border-color: whitesmoke;
+}
+
+#login:hover{
+    border-color:  rgba(62, 226, 226, 0.603);
+    box-shadow:5px 5px  rgba(5, 75, 75, 0.603);
+}
+#pwd:hover{
+    border-color:  rgba(233, 21, 21, 0.966);
+    box-shadow:5px 5px  rgba(209, 123, 117, 0.979);
+}
+a:link{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color:whitesmoke;
+}
+
+
+
+
+
+
+
+.row{
+     position: relative;
+     left: 15px;
+     width: 100%;
+ }
+
+ table, th, td {
+    padding: 5px;
+  }
+
+  table {
+    border-spacing: 5px;
+  } 
+
+
+  .inner-addon {
+    position: relative;
+  }
+  
+  /* style glyph */
+  .inner-addon .glyphicon {
+    position: absolute;
+    padding: 7px;
+    pointer-events: none;
+    text-align: center;
+  }
+  
+  /* align glyph */
+  .left-addon .glyphicon  { left:  0px;}
+  .left-addon input  { padding-left:  30px; }

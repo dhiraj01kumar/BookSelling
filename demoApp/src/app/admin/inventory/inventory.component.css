@@ -1,0 +1,50 @@
+#inventoryDiv{
+    position: relative;
+    top: 100px;
+    left : 200px;
+    height: 350px;
+    width: 850px;
+    background-image: url('/src/assets/images/background2.jpg');
+}
+.glass{
+	/* background styles */
+	position: relative;
+	display: inline-block;
+    padding: 15px 25px;
+    height: 100px;
+    width: 150px;
+	background-color: rgb(22, 124, 131); /*for compatibility with older browsers*/
+	background-image: url('/src/assets/images/background2.jpg');
+
+	/* text styles */
+	text-decoration: none;
+	color: rgb(248, 254, 255);
+	font-size: 15px;
+	font-family: myFont;
+    font-weight: 100;
+    box-shadow: 0px 1px 4px -2px #333;
+    text-shadow: 0px -1px #333;
+}
+.glass:after{
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: calc(100% - 4px);
+	height: 50%;
+	background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+}
+.glass:hover{
+	background: linear-gradient(rgb(19, 102, 95),rgb(7, 155, 106));
+}
+
+table{
+    position: absolute ;
+    left: 20px;
+    top: 20px;
+    border-collapse: separate;
+    border-spacing: 40px 0;
+}
+td {
+    padding: 10px 0;
+  }

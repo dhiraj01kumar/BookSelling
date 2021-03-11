@@ -1,0 +1,12 @@
+#searchbar{
+    width: 500px;
+    border-radius: 7px;
+    height: 30px;
+}
+::placeholder{
+    font-size: inherit;
+}
+
+.section{
+    position : sticky;
+}
